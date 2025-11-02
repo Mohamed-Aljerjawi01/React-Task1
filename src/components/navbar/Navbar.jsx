@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styleNavbar from'./navbar.module.css'
 
 function Navbar(){
@@ -8,13 +9,13 @@ function Navbar(){
     return <>
         <div className={`${styleNavbar.header}`}>
             <div>
-                <h1>Start Bootstrap</h1>
+                <Link className={styleNavbar.link} to={'/hero'}><h1>Start Bootstrap</h1></Link>
             </div>
             <div>
                 <ul className={styleNavbar.nav}>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><Link to={'/portfolio'}>Portfolio</Link></li>
+                    <li><Link to={'/about'}>About</Link></li>
+                    <li><Link to={'/contact'}>Contact</Link></li>
                 </ul>
             </div>
         </div>
