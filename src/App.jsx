@@ -10,7 +10,7 @@ function App(){
   return <>
     <Navbar/>
       <Routes>
-        <Route path='/hero' element={<Hero/>}></Route>
+        <Route path='/' element={<Hero/>}></Route>
         <Route path='/portfolio' element={<Portfolio/>}></Route>
         <Route path='/about' element={<About/>}></Route>
         <Route path='/contact' element={<Contact/>}></Route>

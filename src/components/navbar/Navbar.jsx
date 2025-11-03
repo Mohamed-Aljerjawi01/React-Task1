@@ -9,7 +9,7 @@ function Navbar(){
     return <>
         <div className={`${styleNavbar.header}`}>
             <div>
-                <Link className={styleNavbar.link} to={'/hero'}><h1>Start Bootstrap</h1></Link>
+                <Link className={styleNavbar.link} to={'/'}><h1>Start Bootstrap</h1></Link>
             </div>
             <div>
                 <ul className={styleNavbar.nav}>
